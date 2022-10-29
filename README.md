@@ -57,7 +57,7 @@ The plugin will evaluate the transition of the sliders and update the irregular 
 | none                     | No changes                                                   |
 | none, but reason updated | The reason (name) of the irregular closing will be updated   |
 | open >> closed           | A new irregular closing entry will be added (todays date, 00:00 to 23:55) |
-| closed >> open           | The irregular entry used previously to populate the dialog will be removed |
+| closed >> open           | The irregular entry used previously to populate the dialogue will be removed |
 
 
 
@@ -71,7 +71,7 @@ If you are using this plugin exclusively, to manage the irregular closings, such
 
 ## Roles and Capabilities
 
-To access the IC Quick Set dialog you need to add the **ohx-quickset** capability to all roles allowed to use it. To do so, you can use a the [Roles & Capabilities](https://wordpress.org/plugins/leira-roles/) plugin.
+To access the IC Quick Set dialogue you need to add the **ohx-quickset** capability to all roles allowed to use it. To do so, you can use a the [Roles & Capabilities](https://wordpress.org/plugins/leira-roles/) plugin.
 
 Alternatively you can remove or comment the following lines in the file "class-ohx-admin.php":
 
