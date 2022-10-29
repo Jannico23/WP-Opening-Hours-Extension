@@ -1,0 +1,179 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ /**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap');
+
+/* To avoid affecting rest of admin area, ensure CSS targets specific elements */
+
+#ic-reason {
+    height:20px;
+    font-size: 18px;
+    font-family: 'Raleway';
+}
+
+#table_ic { 
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+/* Table striping */
+#table_ic  tr:nth-of-type(odd) { 
+    background: #eee; 
+  }
+#table_ic th { 
+    background: steelblue; 
+    color: white; 
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Raleway';
+
+  }
+#table_ic td { 
+    border: 1px solid #ccc; 
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Raleway';
+
+  }
+
+/**
+ * responsive styles for mobile phone
+ * derived from https://css-tricks.com/responsive-data-tables/
+*/
+@media 
+only screen and (max-width: 780px) {
+      #ic-reason {
+          font-size: 18px;
+          font-family: 'Raleway';
+          min-height: 30px;
+	  padding-top: 0px;
+          padding-bottom: 0px;
+      }
+
+      /* Force table to not be like tables anymore */
+      #table_ic, thead, tbody, th, td, tr { 
+          display: block; 
+      }
+      
+      /* Hide table headers (but not display: none;, for accessibility) */
+      #table_ic thead tr { 
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+      }
+      
+      #table_ic tr { border: 1px solid #ccc; }
+      
+      #table_ic td { 
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid #eee; 
+          position: relative;
+          padding-left: 30%;
+          font-size: 18px;
+          font-family: 'Raleway';
+          min-height: 20px;
+      }
+      
+      #table_ic td:before { 
+          /* Now like a table header */
+          position: absolute;
+          /* Top/left values mimic padding */
+          left: 6px;
+          width: 45%; 
+          padding-right: 10px; 
+          white-space: nowrap;
+          line-height: 30px;
+          font-size: 18px;
+          font-family: 'Raleway';
+          font-weight: bold;
+      }
+      
+      /*
+      Label the data
+      */
+      td:nth-of-type(1):before { content: "Einrichtung"; }
+      td:nth-of-type(2):before { content: "Status"; }
+      td:nth-of-type(3):before { content: "Grund"; }
+  }
+
+
+
+
+
+
+/**
+ * Checkbox Toggle UI
+ */
+ input[type="checkbox"].wppd-ui-toggle {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    -webkit-tap-highlight-color: transparent;
+
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    position: relative;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: 0 4px;
+    background: none;
+    box-shadow: none;
+}
+input[type="checkbox"].wppd-ui-toggle:focus {
+    box-shadow: none;
+}
+input[type="checkbox"].wppd-ui-toggle:after {
+    content: 'OPEN';
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 18px;
+    text-indent: 12px;
+    color: #ffffff;
+    width: 56px;
+    height: 18px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 72px;
+    box-shadow: 0 0 12px rgb(0 0 0 / 15%) inset;
+}
+input[type="checkbox"].wppd-ui-toggle:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+input[type="checkbox"].wppd-ui-toggle:checked:before {
+    left: 40px;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"].wppd-ui-toggle,
+input[type="checkbox"].wppd-ui-toggle:before,
+input[type="checkbox"].wppd-ui-toggle:after,
+input[type="checkbox"].wppd-ui-toggle:checked:before,
+input[type="checkbox"].wppd-ui-toggle:checked:after {
+    transition: ease .15s;
+}
+
+
+input[type="checkbox"].wppd-ui-toggle:checked:after {
+    content: 'CLOSED';
+	text-indent: -12px;
+    background-color: red;
+}
+

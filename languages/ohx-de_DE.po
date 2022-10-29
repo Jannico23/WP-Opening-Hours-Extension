@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OHX\n"
+"POT-Creation-Date: 2022-10-29 17:52+0200\n"
+"PO-Revision-Date: 2022-10-29 17:53+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _e;__;_n;_x;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: includes/jquery-ui-timepicker\n"
+"X-Poedit-SearchPathExcluded-1: css\n"
+"X-Poedit-SearchPathExcluded-2: javascript\n"
+"X-Poedit-SearchPathExcluded-3: less\n"
+"X-Poedit-SearchPathExcluded-4: README.md\n"
+"X-Poedit-SearchPathExcluded-5: node_modules\n"
+"X-Poedit-SearchPathExcluded-6: includes/wp-detail-fields\n"
+"X-Poedit-SearchPathExcluded-7: vendor\n"
+
+#: admin/class-ohx-admin.php:206
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Du hast keine Berechtigung, um auf diese Seite zugreifen zu können."
+
+#: admin/class-ohx-admin.php:260
+msgid "QuickSet"
+msgstr "QuickSet"
+
+#: admin/class-ohx-admin.php:266
+msgid "List of Irregular Closings"
+msgstr "Liste ausserordentlicher Schliessungen"
+
+#: admin/class-ohx-admin.php:272
+msgid "Facility"
+msgstr "Einrichtung"
+
+#: admin/class-ohx-admin.php:273
+msgid "Status"
+msgstr "Status"
+
+#: admin/class-ohx-admin.php:274
+msgid "Reason"
+msgstr "Grund"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Start"
+#~ msgstr "Beginn"
+
+#~ msgid "End"
+#~ msgstr "Ende"
