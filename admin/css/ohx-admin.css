@@ -25,7 +25,7 @@
     background: #eee; 
   }
 #table_ic th { 
-    background: steelblue; 
+    background: #2271b1; 
     color: white; 
     font-weight: bold;
     font-size: 18px;
@@ -73,10 +73,12 @@ only screen and (max-width: 780px) {
           border: none;
           border-bottom: 1px solid #eee; 
           position: relative;
-          padding-left: 30%;
+          padding-left: 32%;
           font-size: 18px;
           font-family: 'Raleway';
+          font-weight: bold;
           min-height: 20px;
+          line-height: 30px;
       }
       
       #table_ic td:before { 
@@ -90,21 +92,30 @@ only screen and (max-width: 780px) {
           line-height: 30px;
           font-size: 18px;
           font-family: 'Raleway';
-          font-weight: bold;
+          font-weight: normal;
       }
       
       /*
-      Label the data
+      Label the data (default is german)
       */
-      td:nth-of-type(1):before { content: "Einrichtung"; }
-      td:nth-of-type(2):before { content: "Status"; }
-      td:nth-of-type(3):before { content: "Grund"; }
+      td:nth-of-type(1):before { content: "Einrichtung:"; }
+      td:nth-of-type(2):before { content: "Status:"; }
+      td:nth-of-type(3):before { content: "Grund:"; }
+
+      /*
+      If WordPress is set to english
+      */
+      td:nth-of-type(1):lang(en)::before { content: "Facility:"; }
+      td:nth-of-type(2):lang(en)::before { content: "Status:"; }
+      td:nth-of-type(3):lang(en)::before { content: "Reason:"; }
+        
   }
 
 
 
 
 
+/* LIST IRREGULAR CLOSINGS */
 
 /**
  * Checkbox Toggle UI
