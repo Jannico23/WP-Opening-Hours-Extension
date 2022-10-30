@@ -63,7 +63,7 @@ The plugin will evaluate the transition of the sliders and update the irregular 
 
 ## Limitations
 
-We expect, to have only **one irregular closing per facility and day** and it has to span over the whole day (i.e., 00:00 to 23:55). If a facility has several irregular closings for a particular day - especially overlapping entries -  (e.g.; 00:00 to 09:00 and 00:00 to 23:55), the logic will pick the first entry found to populate the QuickSet dialogue. This entry will then be updated/deleted, depending on the transition. However, the second, overlapping entry will remain unchanged and cause unexpected results on the webpage.
+We expect, to have only **one irregular closing per facility and day** and it has to span over the whole day (i.e., 00:00 to 23:55). If a facility has several irregular closings for a particular day - especially overlapping entries -  (e.g., 00:00 to 09:00 and 00:00 to 23:55), the logic will pick the first entry found to populate the QuickSet dialogue. This entry will then be updated/deleted, depending on the transition. However, the second, overlapping entry will remain unchanged and cause unexpected results on the webpage.
 
 If you are using this plugin exclusively to manage the irregular closings, such situations will not occur. 
 
